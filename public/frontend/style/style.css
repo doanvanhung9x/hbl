@@ -1,0 +1,596 @@
+body{
+	position: relative;
+}
+.containerx
+{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.contact .hotline1
+{
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+}
+.contact .hotline2
+{
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+}
+.menuhome
+{
+	display: flex;
+}
+
+.contact a
+{
+	text-decoration: none;
+	color: #2c9930;
+}
+.contact .fa-phone-alt
+{
+	color: #2c9930;
+}
+.contact .icon-phone
+{
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #2c9930;
+	border-radius: 50%;
+    display: none;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    display: none !important;
+}
+.menu
+{
+	background-color: #2c9930;
+}
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+}
+.menu ul li
+{
+	list-style: none;
+	position: relative;
+
+}
+.menu ul li:hover .dropdown
+{
+	display: block;
+
+}
+.menu ul li .dropdown
+{
+	display: none;
+	border-top:1px solid #ccc;
+	border-radius: 5px;
+	position:absolute;
+	z-index: 10;
+	background-color: #2c9930;
+	width: 200px;
+}
+.menu ul li .dropdown ul li a
+{
+	border: none;
+}
+.menu ul li .dropdown ul li:hover
+{
+	background:#2c9930;
+}
+.menu ul>li>a
+{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+    border-right: 1px solid #2c9930;
+    border-left: 1px solid #ffffff;
+    padding: 12px 10px;
+	font-size:14.5px;
+	line-height: 46px;
+}
+.menu form input
+{
+	border:none;
+	outline: unset;
+	border-radius:20px;
+	height:35px;
+	width: 215px;
+
+}
+.sidebar .btn-exit
+{
+	position: absolute;
+	right: -35px;
+	top: 0;
+	font-size: 25px;
+	border: none;
+	color:#2c9930
+}
+.sidebar
+{
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	background:#ffffff;
+	z-index: 100;
+	width: 280px;
+	margin-left: -320px;
+	transition: all 0.5s ease;
+
+}
+.sidebar .menu-sidebar
+{
+	margin: 0;
+	padding: 0;
+}
+.sidebar .menu-sidebar li
+{
+ list-style: none;
+ line-height: 45px;
+ padding-left: 25px;
+}
+.sidebar .menu-sidebar li a
+{
+ 	text-decoration: none;
+	 color: #1f568b;
+	 font-weight: bold;
+}
+.dropdown-sidebar
+{
+	margin: 0;
+	padding: 0;
+}
+.dropdown-sidebar li
+{
+	padding: 0;
+}
+.card-body
+{
+	border:none;
+}
+.btn-search
+{
+	position: absolute;
+	border:none;
+	background:transparent;
+	outline: unset;
+	right: 0;
+	top:0
+}
+.btn-sidebar{
+	background:transparent;
+	color: #ffffff;
+	font-size: 28px;
+	border: none;
+}
+.btn-search i
+{
+	color:#2c9930;
+	line-height:32px;
+	font-size:20px
+}
+.nav-search
+{
+	position: relative;
+}
+/*.content*/
+/*{*/
+/*	background-image: url(../images/bg_story.jpg);*/
+
+/*}*/
+.owl-dots {
+    display: none;
+}
+.prize h3
+{
+	color: #2c9930;
+	font-weight: bold;
+}
+.boxteam {
+	border-radius: 20px;
+	border: 1px solid #B3B3B3;
+	padding: 25px;
+	background-image: url(../images/bg_story.jpg);
+}
+.listmember
+{
+	margin: 0px;
+	padding: 0px;
+	overflow-y: scroll;
+	height: 500px;
+
+}
+.listmember li
+{
+	list-style: none;
+}
+.listmember li img
+{
+	float: left;
+	padding-right: 10px;
+
+}
+
+.product h3
+{
+	color: #2c9930;
+	font-weight: bold;
+	text-align: center;
+}
+.product .item a
+{
+	text-decoration: none;
+	color: #2c9930;
+	font-weight: bold;
+}
+.product .item b
+{
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+}
+.news .items
+{
+	border: 1px solid #b3b3b380;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 15px;
+    margin: 8px 0;
+    margin-right: 20px;
+    color: #2c9930;
+}
+
+.news h3
+{
+	color: #2c9930;
+	font-weight: bold;
+}
+.news .items a
+{
+	font-weight: bold;
+	color: #2c9930;
+	text-decoration: none;
+
+}
+.news {
+
+	background-image: url(../images/bg_story.jpg);
+}
+.newsitem
+{
+	padding:15px;
+	background: #ffffff;
+}
+.newsitem a
+{
+	color:#2c9930;
+	font-weight: bold;
+	text-decoration: none;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
+{
+    display: none !important;
+}
+.video h3
+{
+	color: #2c9930;
+	font-weight: bold;
+	text-align: center;
+}
+.video .item a
+{
+	color:#2c9930;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu-container
+{
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+.menu-container li
+{
+	list-style: none;
+	position: relative;
+}
+.menu-container li:hover .mark
+{
+	display:block;
+
+}
+.menu-container li:hover a
+{
+	color: #2c9930;
+
+}
+.menu-container li a
+{
+	text-decoration: none;
+	font-size: 18px;
+	color: #2c9930;
+	font-weight: bold;
+	padding: 10px;
+}
+.containerx ul li .mark
+{
+	display:none;
+	position: absolute;
+	height:80px;
+	width: 80px;
+	border:10px solid #f26f2138;
+	border-radius: 50%;
+	top: -25px;
+	background:transparent;
+
+}
+.bread {
+	background-color: #f8f9fa;
+	line-height:45px
+}
+.bread ol li a {
+    color: #2c9930;
+	text-decoration: none;
+}
+.product .card {
+    justify-content: center;
+    border: none;
+    box-shadow: 1px 1px 3px 2px #ccc;
+    border-radius: 10px;
+	margin: 8px;
+	padding:5px
+}
+.card {
+    width: 30%;
+}
+.product .card a{
+	text-decoration: none;
+}
+.product .card img:hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+.product .card img{
+	border-radius: 5px;
+}
+.product .card h5{
+	font-weight: bold;
+	color: #2c9930;
+	text-align: center;
+}
+.hotnews .main ul
+{
+	margin: 0;
+	padding: 0;
+}
+.hotnews .main ul li
+{
+	clear: left;
+	list-style: none;
+	line-height:50px;
+	padding: 5px 0;
+}
+
+.hotnews .main ul li a
+{
+	text-decoration: none;
+	color: #2c9930;
+	font-size: 15px;
+	font-weight: bold;
+}
+.hotnews .main ul li .thum
+{
+	width: 150px;
+	float:left;
+	padding-right: 10px;
+}
+.hotnews .main ul li .thum img
+{
+
+	border-radius: 5px;
+}
+.hotnews .main ul li a p
+{
+	line-height: 20px;
+}
+.contact h4{
+	font-weight: bold;
+	color: #2c9930;
+	border-bottom:4px solid #2c9930;
+	width:fit-content;
+}
+.boxnews h3
+{
+	color: #2c9930;
+	font-weight: bold;
+	border-bottom: 5px solid #2c9930;
+	width: fit-content;
+}
+.hotnews h4
+{
+	font-weight: bold;
+	color: #2c9930;
+	border-bottom:2px solid #ccc;
+}
+.boxnews img
+{
+	float: left;
+	padding-right: 20px;
+}
+.boxnews h6 a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #2c9930;
+}
+.boxnews
+{
+	border-bottom: 1px dotted #ccc;
+}
+.detailproduct h4
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #2c9930;
+	border-bottom: 1px solid #ccc;
+}
+.detailproduct img
+{
+	width: 70%;
+	margin:0 auto
+}
+.contactshop h3
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #2c9930;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+.address .right
+{
+	background-color: #135698;
+}
+.company
+{
+
+	text-align:center;
+	color: #ffffff;
+}
+.form h4
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #2c9930;
+	text-align: center;
+}
+textarea
+{
+	width: 100%;
+    height: 200px;
+    outline: unset;
+	border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.btn-feedback
+{
+	background-color: #2c9930;
+	border-radius:0 20px 0 20px;
+	padding: 7px 20px;
+	color: #ffffff;
+
+}
+.btn-feedback:hover
+{
+
+	color: #ffffff;
+
+}
+footer
+{
+	border-top: 4px solid #2c9930;
+}
+footer .info
+{
+	color: #2c9930;
+	font-size:14px
+}
+footer .fbox h6
+{
+	color: #2c9930;
+}
+footer .fbox ul li a
+{
+	text-decoration: none;
+	color: #2c9930;
+}
+footer .fbox ul li:hover a
+{
+	color:#2c9930;
+}
+footer .fbox ul li
+{
+	list-style: none;
+}
+footer .fbox ul
+{
+	margin: 0;
+	padding: 0;
+}
+.connect i
+{
+	color: #2c9930;
+	font-size: 40px;
+	padding-right: 5px;
+}
+.copyright {
+    background-color: #2c9930;
+    color: white;
+}
+.copyright i
+{
+	font-size:11px
+}
+@media screen and (max-width:992px)
+{
+	body
+	{
+		padding:10px
+	}
+	.menuhome
+	{
+		display:none !important;
+	}
+	.card{
+		width: 45%;
+	}
+	.hotnews .main ul li .thum
+	{
+
+		float:none;
+		padding-right: 10px;
+		width: 100%;
+	}
+	.hotnews .main ul li
+	{
+		padding: 0 !important;
+	}
+}
+@media screen and (max-width:768px)
+{
+	.boxnews img {
+		float: left;
+		padding-right: 20px;
+	}
+}
+@media screen and (max-width:568px)
+{
+	.hotline2
+	{
+		font-size:20px !important;
+	}
+}
+@media screen and (max-width:400px)
+{
+	.hotline2
+	{
+		font-size:20px !important;
+	}
+	.card{
+		width:90%;
+	}
+}
+
+.listmember li{
+    display: table-row;
+    height: 130px;
+}
