@@ -87,7 +87,7 @@
 
     <!--banner-->
     <div class="banner">
-        <img src ="frontend/images/trisogroup-3395.jpg" width="100%">
+        <img src ="frontend/images/hbl-banner.jpg" width="100%">
     </div>
     <!--banner-->
 
