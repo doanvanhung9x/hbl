@@ -30,7 +30,7 @@
                         <div class="swiper-slide">
                             <div> <h5>HBL GROUP</h5>
                                 <p>CÔNG TY CỔ PHẦN TẬP ĐOÀN Y TẾ HBL ( Gọi tắt là HBL GROUP) chính thức đi vào hoạt động từ T4.2021, theo giấy phép kinh doanh số 0109604698 - sở kế hoạch đầu tư hà nội. HBL Group  là một trong những đơn vị có uy tín, đã và đang ngày càng khẳng định  được vị thế của mình trong lĩnh vực y tế, chăm sóc sức khỏe cộng đồng.</p>
-                                <div class="d-flex justify-content-center"><a href="http://" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -38,13 +38,13 @@
                                 <h5>HBL GROUP</h5>
                                 <p>HBL Group là công ty tiên phong phát triển theo định hướng chuyển đổi số lĩnh vực y tế, , chăm sóc sức khỏe cộng đồng.  Tuy mới thành lập năm 2021 đã trở thành thương hiệu quen thuộc, và là đối tác tin cậy của nhiều bạn hàng khắp các tỉnh thành trong cả nước.
                                 </p>
-                                <div class="d-flex justify-content-center"><a href="http://" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div> <h5>HBL GROUP</h5>
                                 <p>Tiền thân của  HBL Group gồm các đơn vị: Công ty cổ phẩn Dược & y tế cộng đồng, Công ty cổ phần đầu tư sức khỏe cộng đồng, Công ty cổ phần công nghệ sức khỏe Sao Đại Việt. Chủ tịch HDQT là doanh nhân trẻ luôn tâm huyết với lĩnh vực sức khỏe cộng đồng : Ông Trần Mạnh Đức. </p>
-                                <div class="d-flex justify-content-center"><a href="http://" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+
                             </div>
                         </div>
                     </div>
@@ -97,11 +97,22 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="frontend/images/3-1547.jpg" width="100%">
+                            <img src="frontend/images/hc1.jpg" class="img-gt" width="100%">
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="frontend/images/giaithuongtriso-5-1501.jpg" width="100%">
+                            <img src="frontend/images/hc2.jpg" class="img-gt" width="100%">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="frontend/images/hc3.jpg" class="img-gt" width="100%">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="frontend/images/hc4.jpg" class="img-gt" width="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="frontend/images/hc5.jpg" class="img-gt" width="100%">
                         </div>
                     </div>
 

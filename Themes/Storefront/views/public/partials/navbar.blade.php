@@ -5,7 +5,6 @@
             <ul class="menuhome justify-content-between">
                 <li><a href="{{ route('home') }}">Trang chủ</a></li>
                 <li>
-                    <a href="javascript:void(0)">{{ trans('storefront::custom.home.information') }}</a>
                     @include('public.partials.primary_menu')
                 </li>
                 @foreach($categoryMenu->menus() as $menu)
