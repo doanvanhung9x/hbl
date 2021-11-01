@@ -594,3 +594,13 @@ footer .fbox ul
     display: table-row;
     height: 130px;
 }
+
+.previous-price:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background: #a6a6a6;
+}
