@@ -77,7 +77,7 @@
             </div>
 
             <div class="right col-12 col-md-6 px-2">
-                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/1CH53CM84TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9vFOYOVQAO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -96,21 +96,21 @@
                 <h3>GIẢI THƯỞNG</h3>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="frontend/images/hc1.jpg" class="img-gt" width="100%">
-                        </div>
 
-                        <div class="swiper-slide">
-                            <img src="frontend/images/hc2.jpg" class="img-gt" width="100%">
-                        </div>
 
-                        <div class="swiper-slide">
-                            <img src="frontend/images/hc3.jpg" class="img-gt" width="100%">
-                        </div>
 
-                        <div class="swiper-slide">
-                            <img src="frontend/images/hc4.jpg" class="img-gt" width="100%">
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="swiper-slide">
                             <img src="frontend/images/hc5.jpg" class="img-gt" width="100%">
                         </div>
@@ -227,24 +227,24 @@
             <h3>VIDEO</h3>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <iframe width="100%" height="200px"  src="https://www.youtube.com/embed/X-mN_-dvEbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">Triso sôi động ngày hè 2018 tại hạ long</a>
+                    <iframe width="100%" height="200px"  src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
                 </div>
                 <div class="item">
-                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/X-mN_-dvEbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">Triso sôi động ngày hè 2018 tại hạ long</a>
+                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
                 </div>
                 <div class="item">
-                    <iframe  width="100%" height="200px" src="https://www.youtube.com/embed/X-mN_-dvEbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">Triso sôi động ngày hè 2018 tại hạ long</a>
+                    <iframe  width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
                 </div>
                 <div class="item">
-                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/X-mN_-dvEbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">Triso sôi động ngày hè 2018 tại hạ long</a>
+                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
                 </div>
                 <div class="item">
-                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/X-mN_-dvEbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">Triso sôi động ngày hè 2018 tại hạ long</a>
+                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
                 </div>
             </div>
         </div>

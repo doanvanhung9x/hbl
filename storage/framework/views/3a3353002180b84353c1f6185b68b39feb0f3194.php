@@ -1,29 +1,62 @@
-<?php if($categoryMenu->menus()->isNotEmpty() || $primaryMenu->menus()->isNotEmpty()): ?>
-    <div class="menu">
+<div class="menu">
     <div class="containerx">
         <div class="d-flex px-2 justify-content-between align-items-center flex-wrap p-xl-0 py-lg-2">
             <ul class="menuhome justify-content-between">
                 <li><a href="<?php echo e(route('home')); ?>">Trang chủ</a></li>
-                <li>
-                    <a href="javascript:void(0)"><?php echo e(trans('storefront::custom.home.information')); ?></a>
-                    <?php echo $__env->make('public.partials.primary_menu', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                <li><a href="/gioi-thieu">Giới thiệu</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/lich-su-hinh-thanh-va-phat-trien">Lịch sử hình thành và phát triển</a></li>
+                            <li><a href="/tam-nhin-su-menh-gia-tri-cot-loi">Tầm nhìn sứ mệnh, giá trị cốt lõi</a></li>
+                            <li><a href="/hoi-dong-chuyen-gia">Hội đồng chuyên gia</a></li>
+                            <li><a href="/giai-thuong">Giải thưởng</a></li>
+                            <li><a href="/cac-doi-tac-cua-hbl-group">Các đối tác của HBL Group </a></li>
+                        </ul>
+                    </div>
                 </li>
-                <?php $__currentLoopData = $categoryMenu->menus(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $menu): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                <li><a href="<?php echo e($menu->url()); ?>"><?php echo e($menu->name()); ?><i class="fas fa-caret-down"></i></a>
-                    <?php if(optional($menu->subMenus())->count() > 0): ?>
-                        <div class="dropdown">
-                            <ul >
-                                <?php $__currentLoopData = $menu->subMenus(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <li><a href="<?php echo e($category->url()); ?>"><?php echo e($category->name()); ?></a></li>
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </ul>
-                        </div>
-                    <?php endif; ?>
+                <li><a href="/hbl-group">HBL GROUP</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/factory">Factory</a></li>
+                            <li><a href="/media">Media</a></li>
+                            <li><a href="/technology">Technology</a></li>
+                            <li><a href="/educate">Educate</a></li>
+                            <li><a href="/anpharco">Anpharco</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <li><a href="/san-pham">Sản phẩm</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <?php $__currentLoopData = $categoryPosts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoryPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <li><a href="<?php echo e($categoryPost->url()); ?>"><?php echo e($categoryPost->name); ?><i class="fas fa-caret-down"></i></a>
-                        <?php if(optional($categoryPost)->count() > 0): ?>
+                    <li><a href="<?php echo e($categoryPost->url()); ?>"><?php echo e($categoryPost->name); ?></a>
+                        <?php if(optional($categoryPost->children)->count() > 0): ?>
                             <div class="dropdown">
                                 <ul >
                                     <?php $__currentLoopData = $categoryPost->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $childrenPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -36,17 +69,16 @@
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 <li><a href="<?php echo e(route('contacts.create')); ?>"><?php echo e(trans('storefront::custom.home.contact')); ?></a></li>
             </ul>
-            <div class="btn-sidebar d-block d-lg-none">
-                <button type="button" class="btn-sidebar"><i class="fas fa-bars"></i></button>
-            </div>
-            <form class="nav-search">
-                <input type="text" name="search" class="p-2" placeholder="Tìm kiếm ...">
-                <button class="btn-search"><i class="fas fa-search"></i></button>
-            </form>
+
+
+
+
+
+
+
         </div>
     </div>
 </div>
-<?php endif; ?>
 <div class="sidebar">
     <div>
         <img src="/frontend/images/logo-7411.png">
