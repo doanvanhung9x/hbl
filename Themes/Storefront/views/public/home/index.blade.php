@@ -27,7 +27,7 @@
     <div class="content">
         <div class="containerx d-md-flex d-block py-5">
             <div class="left col-md-6 col-12 px-md-5 px-0">Dec
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div> <h5>HBL GROUP</h5>
@@ -54,28 +54,6 @@
 
                     <div class="swiper-pagination"></div>
                 </div>
-
-                <!-- Swiper JS -->
-                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-                <!-- Initialize Swiper -->
-                <script>
-                    var swiper = new Swiper(".mySwiper", {
-                        slidesPerView: 1,
-                        spaceBetween: 30,
-                        keyboard: {
-                            enabled: true,
-                        },
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                    });
-                </script>
             </div>
 
             <div class="right col-12 col-md-6 px-2">
@@ -96,7 +74,7 @@
         <div class="containerx d-block  d-md-flex">
             <div class="col-12 col-md-7 px-2">
                 <h3>GIẢI THƯỞNG</h3>
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
 {{--                        <div class="swiper-slide">--}}
 {{--                            <img src="frontend/images/hc1.jpg" class="img-gt" width="100%">--}}
@@ -229,20 +207,16 @@
             <h3>VIDEO</h3>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <iframe width="100%" height="200px"  src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
+                    <iframe width="100%" height="200px"  src="https://www.youtube.com/embed/ZiXhamS85BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">Hướng dẫn sử dụng máy Vật Lý Trị Liệu Wonder MF 5 08 New 0966 755 995</a>
                 </div>
                 <div class="item">
-                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
+                    <iframe  width="100%" height="200px" src="https://www.youtube.com/embed/dfFVxtooPhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">HOẠT HUYẾT NATTOKINASE PLUS</a>
                 </div>
                 <div class="item">
-                    <iframe  width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
-                </div>
-                <div class="item">
-                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
+                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/gYV9kzR_WcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed">Bổ sung sữa MILK CODOCA HI CANXI - Sống khỏe mỗi ngày</a>
                 </div>
                 <div class="item">
                     <iframe width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -252,3 +226,74 @@
         </div>
     </div>
 @endsection
+@push('js')
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var swiper3 = new Swiper(".mySwiper3", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+@endpush
