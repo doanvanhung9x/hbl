@@ -19,6 +19,7 @@ if (! function_exists('product_price')) {
         $price = $product->price->convertToCurrentCurrency()->format();
         $specialPrice = $product->special_price->convertToCurrentCurrency()->format();
 
-        return new HtmlString("{$specialPrice} <span class='{$class}'>{$price}</span>");
+        return new HtmlString("{$specialPrice} <del class='{$class}'>{$price}</del>");
+//        return new HtmlString("{$specialPrice} <span class='{$class}'>{$price}</span>");
     }
 }
