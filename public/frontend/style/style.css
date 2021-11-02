@@ -95,6 +95,7 @@ body{
     padding: 12px 10px;
 	font-size:14.5px;
 	line-height: 46px;
+    text-transform: uppercase;
 }
 .menu form input
 {
@@ -270,6 +271,13 @@ body{
 	padding:15px;
 	background: #ffffff;
 }
+@media screen and (min-width:992px){
+    .newsitem {
+        min-height: 355px;
+    }
+}
+
+
 .newsitem a
 {
 	color:#2c9930;

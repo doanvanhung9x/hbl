@@ -106,28 +106,28 @@
                     <h3>Hội đồng khoa học</h3>
                     <ul class="listmember">
                         <li>
-                            <img  src="frontend/images/user3.jpg" width="110px">
+                            <img  src="frontend/images/user3.jpg" width="110px" style="border-radius: 4px;">
                             <p>
                                 <b>Phạm Hòa Lan</b>
                                 <p>Đại tá thầy thuốc ưu tú</p>
                             </p>
                         </li>
                         <li>
-                            <img  src="frontend/images/user4.jpg" width="110px">
+                            <img  src="frontend/images/user4.jpg" width="110px" style="border-radius: 4px;">
                             <p>
                             <b>Ths Phạm Phương Liên</b>
                             <p>Nguyên Giảng viên Trường đại học y tế công cộng.</p>
                             </p>
                         </li>
                         <li>
-                            <img  src="frontend/images/user5.jpg" width="110px">
+                            <img  src="frontend/images/user5.jpg" width="110px" style="border-radius: 4px;">
                             <p>
                                 <b>Bs.Đỗ Nam Khánh</b>
                                 <p>Tổng GĐ công ty truyền thông sức khỏe sao đại việt</p>
                             </p>
                         </li>
                         <li>
-                            <img  src="frontend/images/user1.jpg" width="110px">
+                            <img  src="frontend/images/user1.jpg" width="110px" style="border-radius: 4px;">
                             <p>
                                 <b>Ths, Bs Nguyễn Thanh Tùng</b>
                                 <p>Nguyên cán bộ Cục khám chữa bệnh - Bộ y tế.</p>
@@ -135,7 +135,7 @@
                         </li>
 
                         <li>
-                            <img  src="frontend/images/user2.jpg" width="110px">
+                            <img  src="frontend/images/user2.jpg" width="110px" style="border-radius: 4px;">
                             <p>
                                 <b>Bs Nguyễn Ngọc An</b>
                             <p>Khoa ngoại bệnh viện E.</p>
