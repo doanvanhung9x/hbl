@@ -93,7 +93,7 @@ body{
     border-right: 1px solid #2c9930;
     border-left: 1px solid #ffffff;
     padding: 12px 10px;
-	font-size:14.5px;
+	font-size:14px;
 	line-height: 46px;
     text-transform: uppercase;
 }
@@ -611,4 +611,70 @@ footer .fbox ul
     height: 1px;
     width: 100%;
     background: #a6a6a6;
+}
+
+footer ul{
+    padding-left: 0px;
+}
+
+footer ul.ft-social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul.ft-social li {
+    float: left;
+    margin-right: 10px;
+    list-style: none;
+}
+
+footer ul.ft-social li i {
+    font-size: 300%;
+}
+
+.newsitem img{
+    height: 170px;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #2c9930;
+    border-color: #2c9930;
+}
+
+.page-link{
+    color: #2c9930;
+}
+
+.sub{
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    left: 281px;
+    top: -40px;
+    display: none;
+}
+.sub:hover .submenu{
+    display: block !important;
+    background-color: #2c9930;
+    width: 280px;
+    border-radius: 4px;
+}
+
+.submenu li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+}
+
+.menu ul li .dropdown ul li a {
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
 }

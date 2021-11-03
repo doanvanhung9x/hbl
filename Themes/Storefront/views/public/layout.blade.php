@@ -31,6 +31,8 @@
     @include('public.partials.header')
     @yield('content')
     @include('public.partials.footer')
+    <script src="{{ asset('frontend/js/popper.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('frontend/js/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('frontend/js/fancybox.umd.js') }}" type="text/javascript"></script>
     <script src="{{ asset('frontend/js/jquery-3.2.1.slim.min.js') }}" crossorigin="anonymous"></script>
@@ -39,5 +41,12 @@
     <script src="{{ asset('frontend/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('frontend/js/js.js') }}" type="text/javascript"></script>
     @stack('js')
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 </html>

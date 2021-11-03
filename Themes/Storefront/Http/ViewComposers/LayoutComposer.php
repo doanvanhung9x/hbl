@@ -31,6 +31,7 @@ class LayoutComposer
             'categories' => $this->getCategories(),
             'primaryMenu' => $this->getPrimaryMenu(),
             'categoryMenu' => $this->getCategoryMenu(),
+            'categoryProducts' => $this->getCategoryProducts(),
             'categoryPosts' => $this->getCategoryPosts(),
             'cart' => $this->getCart(),
             'shouldExpandCategoryMenu' => $this->getShouldExpandCategoryMenu(),
@@ -50,6 +51,11 @@ class LayoutComposer
     private function getCategoryPosts()
     {
         return CategoryPost::where('parent_id', 0)->with('children')->get();
+    }
+
+    private function getCategoryProducts()
+    {
+        return Category::where('parent_id', 0)->with('children')->get();
     }
 
     private function getTheme()

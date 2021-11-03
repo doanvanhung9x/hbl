@@ -33,6 +33,8 @@
     <?php echo $__env->make('public.partials.header', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php echo $__env->yieldContent('content'); ?>
     <?php echo $__env->make('public.partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <script src="<?php echo e(asset('frontend/js/popper.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('frontend/js/bootstrap.min.js')); ?>"></script>
     <script src="<?php echo e(asset('frontend/js/swiper-bundle.min.js')); ?>"></script>
     <script src="<?php echo e(asset('frontend/js/fancybox.umd.js')); ?>" type="text/javascript"></script>
     <script src="<?php echo e(asset('frontend/js/jquery-3.2.1.slim.min.js')); ?>" crossorigin="anonymous"></script>
@@ -41,5 +43,12 @@
     <script src="<?php echo e(asset('frontend/owlcarousel/owl.carousel.min.js')); ?>"></script>
     <script src="<?php echo e(asset('frontend/js/js.js')); ?>" type="text/javascript"></script>
     <?php echo $__env->yieldPushContent('js'); ?>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 </html>

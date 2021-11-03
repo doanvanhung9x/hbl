@@ -14,14 +14,48 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="/hbl-group">HBL GROUP</a>
+                <li><a href="javascript:void(0);">HBL GROUP</a>
                     <div class="dropdown">
                         <ul>
-                            <li><a href="/factory">Factory</a></li>
-                            <li><a href="/media">Media</a></li>
-                            <li><a href="/technology">Technology</a></li>
-                            <li><a href="/educate">Educate</a></li>
-                            <li><a href="/anpharco">Anpharco</a></li>
+                            <li class="sub"><a href="javascript:void(0);">Nhà máy sản xuất</a>
+                                <div class="dropdown">
+                                    <ul class="submenu">
+                                        <li><a href="/cong-ty-co-phan-nutrihealth">CTCP NUTRIHEALTH</a></li>
+                                        <li><a href="/cong-ty-co-phan-d2pharm-viet-nam">CTCP D2Pharm Việt Nam</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sub"><a href="javascript:void(0);">Công ty công nghệ</a>
+                                <div class="dropdown">
+                                    <ul class="submenu">
+                                        <li><a href="/cong-ty-tnhh-phan-mem-va-truyen-thong-boxlink">CT TNHN PHẦN MỀM VÀ TRUYỀN THÔNG BOXLINK</a></li>
+                                        <li><a href="/cong-ty-co-phan-cong-nghe-suc-khoe-sao-dai-viet">CTCP CÔNG NGHỆ SỨC KHỎE SAO ĐẠI VIỆT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sub"><a href="javascript:void(0);">Công ty phân phối OTC/ETC</a>
+                                <div class="dropdown">
+                                    <ul class="submenu">
+                                        <li><a href="/cong-ty-co-phan-duoc-dich-vu-y-te-cong-dong">CTCP Dược & dịch vụ y- tế cộng đồng</a></li>
+                                        <li><a href="/cong-ty-co-phan-y-te-hbl-hai-duong">CTCP Y TẾ HBL HẢI DƯƠNG</a></li>
+                                        <li><a href="/cong-ty-co-phan-y-te-hbl-hai-phong">CTCP Y TẾ HBL HẢI PHÒNG</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sub"><a href="javascript:void(0);">Công ty truyền thông</a>
+                                <div class="dropdown">
+                                    <ul class="submenu">
+                                        <li><a href="/cong-ty-co-phan-truyen-thong-cham-soc-suc-khoe-sao-dai-viet">CTCP TRUYỀN THÔNG CHĂM SÓC SỨC KHỎE SAO ĐẠI VIỆT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sub"><a href="javascript:void(0);">Công ty xuất nhập khẩu</a>
+                                <div class="dropdown">
+                                    <ul class="submenu">
+                                        <li><a href="/cong-ty-co-phan-duoc-pham-va-cong-nghe-y-te-anpharco">CTCP DƯỢC PHẨM VÀ CÔNG NGHỆ Y TẾ ANPHARCO</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -54,6 +88,19 @@
 {{--                    </li>--}}
 {{--                    @endforeach--}}
 {{--                @endif--}}
+                @foreach($categoryProducts as $categoryProduct)
+                    <li><a href="{{ $categoryProduct->url() }}">{{ $categoryProduct->name }}</a>
+                        @if (optional($categoryProduct->children)->count() > 0)
+                            <div class="dropdown">
+                                <ul >
+                                    @foreach($categoryProduct->children as $childrenPost)
+                                        <li><a href="{{ $childrenPost->url() }}">{{ $childrenPost->name }}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                    </li>
+                @endforeach
                 @foreach($categoryPosts as $categoryPost)
                     <li><a href="{{ $categoryPost->url() }}">{{ $categoryPost->name }}</a>
                         @if (optional($categoryPost->children)->count() > 0)

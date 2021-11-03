@@ -32,6 +32,18 @@
                     <img src="{{ $headerLogo }}" width="100%" alt="{{ setting('store_name') }}"/>
                 @endif
             </div>
+            <ul class="ft-social">
+                <li>
+                    <a target="_blank" class="text-orange" href="https://www.youtube.com/channel/UCsNCWsOdIP7-FSu0TjIHUAw">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" class="text-orange" href="https://www.facebook.com/HBL-Group-100932422247451">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </footer>
