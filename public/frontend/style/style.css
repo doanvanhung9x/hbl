@@ -21,7 +21,8 @@ body{
 }
 .menuhome
 {
-	display: flex;
+	display: inline-flex;
+    margin: 0 auto !important;
 }
 
 .contact a
@@ -169,9 +170,10 @@ body{
 }
 .btn-sidebar{
 	background:transparent;
-	color: #ffffff;
-	font-size: 28px;
-	border: none;
+    color: #020202;
+    font-size: 17px;
+    padding: 10px 5px;
+    border: none;
 }
 .btn-search i
 {
@@ -677,4 +679,80 @@ footer ul.ft-social li i {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+.home-search {
+    position: relative;
+}
+
+.autocomplete {
+    position: relative;
+}
+
+.home-search input {
+    width: 100% !important;
+}
+.home-search input {
+    border-radius: 6px;
+}
+.home-search input {
+    background: #e8f0fe;
+    width: calc(100% - 105px);
+    height: 45px;
+    border: 0;
+    float: left;
+    padding: 0 15px;
+}
+.home-search .autocomplete .btn-search {
+    position: absolute;
+    height: 36px;
+    right: 0px;
+    top: 0px;
+    padding: 3px;
+    background: white;
+    color: #2c9930;
+    margin: 4px;
+    border-radius: 6px;
+    font-weight: normal;
+}
+
+.home-search input:focus{
+    border: none;
+    outline: none;
+}
+
+.home-search button {
+    height: 45px;
+    width: 105px;
+    font-weight: 600;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    float: left;
+    color: #2f3241;
+}
+
+.home-search .btn-search i {
+    color: #2c9930;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.home-search input::placeholder {
+    color: #333;
+}
+
+@media screen and (max-width:600px)
+{
+    .mobile-hide{
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px)
+{
+    .desktop-hide{
+        display: none;
+    }
 }
