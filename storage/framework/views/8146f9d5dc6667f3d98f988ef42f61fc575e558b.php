@@ -34,7 +34,7 @@
     </div>
     <div class="listproduct" style="min-height: 500px; padding: 40px 0px;">
         <div class="containerx d-md-flex d-block justify-content-between">
-            <div class="hotnews px-2 col-md-7 col-12 h-100 row">
+            <div class="hotnews px-2 col-md-9 col-12 h-100 row">
                 <h4 >TIN NỔI BẬT</h4>
                 <!--boxnews-->
                 <?php if($posts->count() > 0): ?>
@@ -52,11 +52,10 @@
                 <?php echo $posts->links(); ?>
 
             </div>
-            <div class="hotnews col-md-4 col-12 mt-2">
-                <a href="<?php echo e(route('home')); ?>"><img src="<?php echo e(asset('frontend/images/sptriso-4342.jpg')); ?>" width="100%"></a>
+            <div class="hotnews col-md-3 col-12 mt-2">
                 <?php if($postNews->count() > 0): ?>
                 <div class="boxnews">
-                    <h3 class="py-2">TIN TỨC MỚI</h3>
+                    <h4 class="py-2">TIN TỨC MỚI</h4>
                     <div class="main">
                         <ul>
                             <?php $__currentLoopData = $postNews->filter(fn($pNew) => !empty($pNew->slug)); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $postNew): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>

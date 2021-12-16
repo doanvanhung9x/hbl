@@ -88,32 +88,32 @@
 
 
 
-                <?php $__currentLoopData = $categoryProducts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoryProduct): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <li><a href="<?php echo e($categoryProduct->url()); ?>"><?php echo e($categoryProduct->name); ?></a>
-                        <?php if(optional($categoryProduct->children)->count() > 0): ?>
-                            <div class="dropdown">
-                                <ul >
-                                    <?php $__currentLoopData = $categoryProduct->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $childrenPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <li><a href="<?php echo e($childrenPost->url()); ?>"><?php echo e($childrenPost->name); ?></a></li>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                </ul>
-                            </div>
-                        <?php endif; ?>
-                    </li>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                <?php $__currentLoopData = $categoryPosts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoryPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <li><a href="<?php echo e($categoryPost->url()); ?>"><?php echo e($categoryPost->name); ?></a>
-                        <?php if(optional($categoryPost->children)->count() > 0): ?>
-                            <div class="dropdown">
-                                <ul >
-                                    <?php $__currentLoopData = $categoryPost->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $childrenPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <li><a href="<?php echo e($childrenPost->url()); ?>"><?php echo e($childrenPost->name); ?></a></li>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                </ul>
-                            </div>
-                        <?php endif; ?>
-                    </li>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <li><a href="<?php echo e(route('contacts.create')); ?>"><?php echo e(trans('storefront::custom.home.contact')); ?></a></li>
             </ul>
         </div>
@@ -208,36 +208,36 @@
             </div>
         </li>
         <li><a href="/san-pham">Sản phẩm</a></li>
-        <?php $__currentLoopData = $categoryProducts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoryProduct): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <li><a <?php if(optional($categoryProduct->children)->count() > 0): ?> data-toggle="collapse" href="#collapseExample15<?php echo e($categoryProduct->id); ?>" role="button" aria-expanded="false" aria-controls="collapseExample" <?php else: ?> href="<?php echo e($categoryProduct->url()); ?>" <?php endif; ?> ><?php echo e($categoryProduct->name); ?> <?php if(optional($categoryProduct->children)->count() > 0): ?><i class="fas fa-caret-down"></i> <?php endif; ?></a>
-                <?php if(optional($categoryProduct->children)->count() > 0): ?>
-                    <div class="collapse" id="collapseExample15<?php echo e($categoryProduct->id); ?>">
-                        <div class="card card-body">
-                            <ul class="d-block dropdown-sidebar">
-                            <?php $__currentLoopData = $categoryProduct->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $childrenPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <li><a href="<?php echo e($childrenPost->url()); ?>"><?php echo e($childrenPost->name); ?></a></li>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </ul>
-                        </div>
-                    </div>
-                <?php endif; ?>
-            </li>
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-        <?php $__currentLoopData = $categoryPosts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoryPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <li><a <?php if(optional($categoryPost->children)->count() > 0): ?> data-toggle="collapse" href="#collapseExample16<?php echo e($categoryPost->id); ?>" role="button" aria-expanded="false" aria-controls="collapseExample" <?php else: ?> href="<?php echo e($categoryPost->url()); ?>" <?php endif; ?> ><?php echo e($categoryPost->name); ?> <?php if(optional($categoryPost->children)->count() > 0): ?><i class="fas fa-caret-down"></i> <?php endif; ?></a>
-                <?php if(optional($categoryPost->children)->count() > 0): ?>
-                    <div class="collapse" id="collapseExample16<?php echo e($categoryPost->id); ?>">
-                        <div class="card card-body">
-                            <ul class="d-block dropdown-sidebar">
-                            <?php $__currentLoopData = $categoryPost->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $childrenPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <li><a href="<?php echo e($childrenPost->url()); ?>"><?php echo e($childrenPost->name); ?></a></li>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </ul>
-                        </div>
-                    </div>
-                <?php endif; ?>
-            </li>
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <li><a href="<?php echo e(route('contacts.create')); ?>"><?php echo e(trans('storefront::custom.home.contact')); ?></a></li>
     </ul>
 </div>

@@ -60,19 +60,19 @@
                     </div>
                 </li>
                 <li><a href="/san-pham">Sản phẩm</a></li>
-{{--                <li><a href="/he-thong-phan-phoi">HỆ THỐNG PHÂN PHỐI</a>--}}
-{{--                    <div class="dropdown">--}}
-{{--                        <ul>--}}
-{{--                            <li><a href="/danh-sach-quay-thuoc">Danh sách quầy thuốc</a></li>--}}
-{{--                            <li><a href="/chuoi-cua-hang-alosuckhoe">Chuỗi cửa hàng Alosuckhoe</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </li>--}}
-{{--                @if($primaryMenu->menus()->isNotEmpty())--}}
-{{--                <li>--}}
-{{--                    @include('public.partials.primary_menu')--}}
-{{--                </li>--}}
-{{--                @endif--}}
+                <li><a href="/he-thong-phan-phoi">HỆ THỐNG PHÂN PHỐI</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/danh-sach-quay-thuoc">Danh sách quầy thuốc</a></li>
+                            <li><a href="/chuoi-cua-hang-alosuckhoe">Chuỗi cửa hàng Alosuckhoe</a></li>
+                        </ul>
+                    </div>
+                </li>
+                @if($primaryMenu->menus()->isNotEmpty())
+                <li>
+                    @include('public.partials.primary_menu')
+                </li>
+                @endif
 {{--                @if ($categoryMenu->menus()->isNotEmpty())--}}
 {{--                    @foreach($categoryMenu->menus() as $menu)--}}
 {{--                    <li><a href="{{ $menu->url() }}">{{ $menu->name() }}</a>--}}
