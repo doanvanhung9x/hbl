@@ -8,6 +8,13 @@
     @endif
 @endsection
 @push('css')
+    <style>
+        @media screen and (max-width: 992px){
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
 @endpush
 @section('content')
     <div class="bread">
@@ -23,10 +30,10 @@
 
     <div class="listproduct" style="min-height: 500px;">
         <div class="containerx d-md-flex d-block" style="padding: 40px 0px;">
-            <div class="product mx-1 col-12 h-100 row">
+            <div class="product mx-1 h-100 row">
                 @if($products->count() > 0)
                     @foreach($products->filter(fn($p) => !empty($p->slug)) as $product)
-                        <div class="col-3">
+                        <div class="col-lg-3 col-6">
                             <div class="card">
                                 <a href="{{ route('products.show', $product->slug) }}">
                                     <img class="card-img-top" src="{{ optional($product->base_image)->path }}" alt="{{ $product->name }}">
