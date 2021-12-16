@@ -4,7 +4,10 @@
 <?php $__env->stopSection(); ?>
 <?php $__env->startPush('css'); ?>
     <style>
-      </style>
+        .hotnews img{
+            width: 100%;
+        }
+    </style>
 <?php $__env->stopPush(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="bread">
@@ -19,15 +22,19 @@
     </div>
     <div class="listproduct" style="min-height: 500px; padding: 40px 0px;">
         <div class="containerx d-md-flex d-block justify-content-between">
-            <div class="hotnews px-2 col-md-7 col-12 h-100 row">
+            <div class="hotnews px-2 col-md-9 col-12 h-100 row">
                <?php echo $post->body; ?>
 
+
+                <div class="news-social">
+                    Chia sẻ với:
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo e(route('posts.show', $post->slug)); ?>"><i class="fab fa-facebook-square"></i></a>
+                </div>
             </div>
-            <div class="hotnews col-md-4 col-12 mt-2">
-                <a href="<?php echo e(route('home')); ?>"><img src="<?php echo e(asset('frontend/images/sptriso-4342.jpg')); ?>" width="100%"></a>
+            <div class="hotnews col-md-3 col-12 mt-2">
                 <?php if($postNews->count() > 0): ?>
-                    <div class="boxnews">
-                        <h3 class="py-2">TIN TỨC MỚI</h3>
+                    <div class="boxnews" style="border: none;">
+                        <h4 class="py-2">TIN TỨC MỚI</h4>
                         <div class="main">
                             <ul>
                                 <?php $__currentLoopData = $postNews->filter(fn($pNew) => !empty($pNew->slug)); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $postNew): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -39,13 +46,12 @@
                                     </li>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </ul>
-                            <div class="videohot mt-5">
-                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/1CH53CM84TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div>
-                                    <h5 class="name font-weight-bold;">Những khoảnh khắc đáng nhớ - Lễ Khánh thành Văn phòng mới Triso Group</h5>
-                                    Ngày 19/05/2020, Triso Group tổ chức Lễ Khánh thành văn phòng mới tại địa chỉ Lô U16-L12, Khu đô thị mới Dương Nội, Phường Yên Nghĩa, Quận Hà Đông, Hà Nội.
-                                </div>
-                            </div>
+
+
+
+
+
+
                         </div>
                     </div>
                 <?php endif; ?>

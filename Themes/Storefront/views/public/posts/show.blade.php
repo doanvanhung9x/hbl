@@ -5,7 +5,10 @@
 @endsection
 @push('css')
     <style>
-      </style>
+        .hotnews img{
+            width: 100%;
+        }
+    </style>
 @endpush
 @section('content')
     <div class="bread">
@@ -20,14 +23,18 @@
     </div>
     <div class="listproduct" style="min-height: 500px; padding: 40px 0px;">
         <div class="containerx d-md-flex d-block justify-content-between">
-            <div class="hotnews px-2 col-md-7 col-12 h-100 row">
+            <div class="hotnews px-2 col-md-9 col-12 h-100 row">
                {!! $post->body !!}
+
+                <div class="news-social">
+                    Chia sẻ với:
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ route('posts.show', $post->slug) }}"><i class="fab fa-facebook-square"></i></a>
+                </div>
             </div>
-            <div class="hotnews col-md-4 col-12 mt-2">
-                <a href="{{ route('home') }}"><img src="{{ asset('frontend/images/sptriso-4342.jpg') }}" width="100%"></a>
+            <div class="hotnews col-md-3 col-12 mt-2">
                 @if($postNews->count() > 0)
-                    <div class="boxnews">
-                        <h3 class="py-2">TIN TỨC MỚI</h3>
+                    <div class="boxnews" style="border: none;">
+                        <h4 class="py-2">TIN TỨC MỚI</h4>
                         <div class="main">
                             <ul>
                                 @foreach($postNews->filter(fn($pNew) => !empty($pNew->slug)) as $postNew)
@@ -39,12 +46,12 @@
                                     </li>
                                 @endforeach
                             </ul>
-                            <div class="videohot mt-5">
-                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/9vFOYOVQAO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div>
-                                    <h5 class="name font-weight-bold;">Giới thiệu về sàn TMĐT Alosuckhoe.vn</h5>
-                                </div>
-                            </div>
+{{--                            <div class="videohot mt-5">--}}
+{{--                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/9vFOYOVQAO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+{{--                                <div>--}}
+{{--                                    <h5 class="name font-weight-bold;">Giới thiệu về sàn TMĐT Alosuckhoe.vn</h5>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 @endif

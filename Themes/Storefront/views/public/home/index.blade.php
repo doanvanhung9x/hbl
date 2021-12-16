@@ -25,39 +25,41 @@
     <!--end_slide-->
     <!--content-->
     <div class="content">
-        <div class="containerx d-md-flex d-block py-5">
-            <div class="left col-md-6 col-12 px-md-5 px-0">Dec
-                <div class="swiper mySwiper1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div> <h5>HBL GROUP</h5>
-                                <p>CÔNG TY CỔ PHẦN TẬP ĐOÀN Y TẾ HBL ( Gọi tắt là HBL GROUP) chính thức đi vào hoạt động từ T4.2021, theo giấy phép kinh doanh số 0109604698 - sở kế hoạch đầu tư hà nội. HBL Group  là một trong những đơn vị có uy tín, đã và đang ngày càng khẳng định  được vị thế của mình trong lĩnh vực y tế, chăm sóc sức khỏe cộng đồng.</p>
-{{--                                <div class="d-flex justify-content-center"><a href="#" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>--}}
+        <div class="container d-block py-5">
+            <div class="row">
+                <div class="left col-md-6 col-12 px-md-5 px-0">
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div style="padding: 0px 50px;"> <h5>HBL GROUP</h5>
+                                    <p>CÔNG TY CỔ PHẦN TẬP ĐOÀN Y TẾ HBL ( Gọi tắt là HBL GROUP) chính thức đi vào hoạt động từ T4.2021, theo giấy phép kinh doanh số 0109604698 - sở kế hoạch đầu tư hà nội. HBL Group  là một trong những đơn vị có uy tín, đã và đang ngày càng khẳng định  được vị thế của mình trong lĩnh vực y tế, chăm sóc sức khỏe cộng đồng.</p>
+                                    <div class="d-flex justify-content-center"><a href="javascript:void(0)" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="padding: 0px 50px;">
+                                    <h5>HBL GROUP</h5>
+                                    <p>HBL Group là công ty tiên phong phát triển theo định hướng chuyển đổi số lĩnh vực y tế, , chăm sóc sức khỏe cộng đồng.  Tuy mới thành lập năm 2021 đã trở thành thương hiệu quen thuộc, và là đối tác tin cậy của nhiều bạn hàng khắp các tỉnh thành trong cả nước.
+                                    </p>
+                                    <div class="d-flex justify-content-center"><a href="javascript:void(0)" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="padding: 0px 50px;"> <h5>HBL GROUP</h5>
+                                    <p>Tiền thân của  HBL Group gồm các đơn vị: Công ty cổ phẩn Dược & y tế cộng đồng, Công ty cổ phần đầu tư sức khỏe cộng đồng, Công ty cổ phần công nghệ sức khỏe Sao Đại Việt. Chủ tịch HDQT là doanh nhân trẻ luôn tâm huyết với lĩnh vực sức khỏe cộng đồng : Ông Trần Mạnh Đức. </p>
+                                    <div class="d-flex justify-content-center"><a href="javascript:void(0)" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <h5>HBL GROUP</h5>
-                                <p>HBL Group là công ty tiên phong phát triển theo định hướng chuyển đổi số lĩnh vực y tế, , chăm sóc sức khỏe cộng đồng.  Tuy mới thành lập năm 2021 đã trở thành thương hiệu quen thuộc, và là đối tác tin cậy của nhiều bạn hàng khắp các tỉnh thành trong cả nước.
-                                </p>
-{{--                                <div class="d-flex justify-content-center"><a href="#" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>--}}
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div> <h5>HBL GROUP</h5>
-                                <p>Tiền thân của  HBL Group gồm các đơn vị: Công ty cổ phẩn Dược & y tế cộng đồng, Công ty cổ phần đầu tư sức khỏe cộng đồng, Công ty cổ phần công nghệ sức khỏe Sao Đại Việt. Chủ tịch HDQT là doanh nhân trẻ luôn tâm huyết với lĩnh vực sức khỏe cộng đồng : Ông Trần Mạnh Đức. </p>
-{{--                                <div class="d-flex justify-content-center"><a href="http://" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>--}}
-                            </div>
-                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+{{--                        <div class="swiper-pagination"></div>--}}
                     </div>
-
-
-                    <div class="swiper-pagination"></div>
                 </div>
-            </div>
 
-            <div class="right col-12 col-md-6 px-2">
-                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9vFOYOVQAO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="right col-12 col-md-6 px-2">
+                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9vFOYOVQAO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -152,17 +154,17 @@
     <!--prize-->
 
     <!--product-->
-    @if($products->count() >0 )
+    @if($productSupplements->count() >0 )
     <div class="product py-5">
         <div class="containerx">
-            <h3>SẢN PHẨM</h3>
+            <h3>Thực phẩm bổ sung</h3>
             <div class="owl-carousel owl-theme">
-                @foreach($products->filter(fn($p) => !empty($p->slug)) as $product)
+                @foreach($productSupplements->filter(fn($p) => !empty($p->slug)) as $productSupplement)
                     <div class="item text-center">
-                        <img src="{{ optional($product->base_image)->path }}">
-                        <a href="{{ route('products.show', $product->slug) }}">{{ $product->name }}</a>
-                        <div>{!! $product->short_description !!}</div>
-                        <div><b>{{ product_price($product) }}</b></div>
+                        <img src="{{ optional($productSupplement->base_image)->path }}">
+                        <a href="{{ route('products.show', $productSupplement->slug) }}">{{ $productSupplement->name }}</a>
+                        <div>{!! $productSupplement->short_description !!}</div>
+                        <div><b>{{ product_price($productSupplement) }}</b></div>
                     </div>
                 @endforeach
             </div>
@@ -170,6 +172,47 @@
     </div>
     @endif
     <!--end_product-->
+
+    @if($productMedicals->count() >0 )
+        <div class="product py-5">
+            <div class="containerx">
+                <h3>Thực phẩm bổ sung</h3>
+                <div class="owl-carousel owl-theme">
+                    @foreach($productMedicals->filter(fn($p) => !empty($p->slug)) as $productMedical)
+                        <div class="item text-center">
+                            <a href="{{ route('products.show', $productMedical->slug) }}">
+                                <img src="{{ optional($productMedical->base_image)->path }}">
+                            </a>
+                            <a href="{{ route('products.show', $productMedical->slug) }}">{{ $productMedical->name }}</a>
+                            <div>{!! $productMedical->short_description !!}</div>
+                            <div><b>{{ product_price($productMedical) }}</b></div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    @endif
+
+    @if($productFoods->count() >0 )
+        <div class="product py-5">
+            <div class="containerx">
+                <h3>Thực phẩm bổ sung</h3>
+                <div class="owl-carousel owl-theme">
+                    @foreach($productFoods->filter(fn($p) => !empty($p->slug)) as $productFood)
+                        <div class="item text-center">
+                            <a href="{{ route('products.show', $productFood->slug) }}">
+                                <img src="{{ optional($productFood->base_image)->path }}">
+                            </a>
+                            <a href="{{ route('products.show', $productFood->slug) }}">{{ $productFood->name }}</a>
+                            <div>{!! $productFood->short_description !!}</div>
+                            <div><b>{{ product_price($productFood) }}</b></div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    @endif
+
     @if($posts->count() >0 )
     <!--news-->
     <div class="news py-5">
@@ -208,19 +251,19 @@
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <iframe width="100%" height="200px"  src="https://www.youtube.com/embed/ZiXhamS85BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">Hướng dẫn sử dụng máy Vật Lý Trị Liệu Wonder MF 5 08 New 0966 755 995</a>
+                    <a href="https://www.youtube.com/watch?v=ZiXhamS85BM">Hướng dẫn sử dụng máy Vật Lý Trị Liệu Wonder MF 5 08 New 0966 755 995</a>
                 </div>
                 <div class="item">
                     <iframe  width="100%" height="200px" src="https://www.youtube.com/embed/dfFVxtooPhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">HOẠT HUYẾT NATTOKINASE PLUS</a>
+                    <a href="https://www.youtube.com/watch?v=dfFVxtooPhM">HOẠT HUYẾT NATTOKINASE PLUS</a>
                 </div>
                 <div class="item">
                     <iframe width="100%" height="200px" src="https://www.youtube.com/embed/gYV9kzR_WcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">Bổ sung sữa MILK CODOCA HI CANXI - Sống khỏe mỗi ngày</a>
+                    <a href="https://www.youtube.com/watch?v=gYV9kzR_WcA">Bổ sung sữa MILK CODOCA HI CANXI - Sống khỏe mỗi ngày</a>
                 </div>
                 <div class="item">
                     <iframe width="100%" height="200px" src="https://www.youtube.com/embed/00HrAYZWfQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/embed">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
+                    <a href="https://www.youtube.com/watch?v=00HrAYZWfQM">HBL BẢO VỆ SỨC KHỎE CỦA BẠN</a>
                 </div>
             </div>
         </div>
@@ -242,10 +285,10 @@
             el: ".swiper-pagination",
             clickable: true,
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        // },
     });
 
     var swiper1 = new Swiper(".mySwiper1", {
@@ -254,10 +297,10 @@
         keyboard: {
             enabled: true,
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

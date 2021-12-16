@@ -20,7 +20,7 @@
     <?php echo $__env->yieldPushContent('meta'); ?>
     <link rel="stylesheet" href="<?php echo e(asset('frontend/style/swiper-bundle.min.css')); ?>"/>
     <link rel="stylesheet" href="<?php echo e(asset('frontend/style/fancybox.css')); ?>"/>
-    <link href="<?php echo e(asset('frontend/style/bootstrap.min.css')); ?>" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo e(asset('frontend/style/bootstrap.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('frontend/style/fontawesome.css')); ?>" crossorigin="anonymous"/>
     <link rel="stylesheet" href="<?php echo e(asset('frontend/style/style.css')); ?>" type="text/css">
     <link rel="stylesheet" href="<?php echo e(asset('frontend/owlcarousel/assets/owl.carousel.min.css')); ?>">

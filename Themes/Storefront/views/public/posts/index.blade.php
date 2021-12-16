@@ -35,7 +35,7 @@
     </div>
     <div class="listproduct" style="min-height: 500px; padding: 40px 0px;">
         <div class="containerx d-md-flex d-block justify-content-between">
-            <div class="hotnews px-2 col-md-7 col-12 h-100 row">
+            <div class="hotnews px-2 col-md-9 col-12 h-100 row">
                 <h4 >TIN NỔI BẬT</h4>
                 <!--boxnews-->
                 @if($posts->count() > 0)
@@ -51,11 +51,10 @@
                 @endif
                 {!! $posts->links() !!}
             </div>
-            <div class="hotnews col-md-4 col-12 mt-2">
-                <a href="{{ route('home') }}"><img src="{{ asset('frontend/images/sptriso-4342.jpg') }}" width="100%"></a>
+            <div class="hotnews col-md-3 col-12 mt-2">
                 @if($postNews->count() > 0)
                 <div class="boxnews">
-                    <h3 class="py-2">TIN TỨC MỚI</h3>
+                    <h4 class="py-2">TIN TỨC MỚI</h4>
                     <div class="main">
                         <ul>
                             @foreach($postNews->filter(fn($pNew) => !empty($pNew->slug)) as $postNew)

@@ -5,8 +5,6 @@
             <span><b>Hotline:</b> <?php echo e(setting('store_phone')); ?> </span><br>
             <span><b>Email:</b> <?php echo e(setting('store_email')); ?></span><br>
             <span><b>Địa Chỉ:</b> C3 Lô 18 KĐT Định Công, Phường Định Công, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam</span><br>
-            <span><b>GPKD:</b> Giấy phép kinh doanh số 0109604698</span><br>
-            <span>Sở kế hoạch và đầu tư thành phố Hà Nội cấp giấy phép: 20/04/2021</span><br>
         </div>
         <div class="col-12 col-sm-3 fbox px-2">
             <h6><b>Liên kết nhanh</b></h6>
@@ -27,11 +25,6 @@
             </ul>
         </div>
         <div class=" col-12 col-sm-3 connect px-2">
-            <div>
-                <?php if(!empty($headerLogo)): ?>
-                    <img src="<?php echo e($headerLogo); ?>" width="100%" alt="<?php echo e(setting('store_name')); ?>"/>
-                <?php endif; ?>
-            </div>
             <ul class="ft-social">
                 <li>
                     <a target="_blank" class="text-orange" href="https://www.youtube.com/channel/UCsNCWsOdIP7-FSu0TjIHUAw">
@@ -47,8 +40,15 @@
         </div>
     </div>
 </footer>
-
-<div class="copyright py-2 text-center">
+<hr>
+<div class="py-2 text-left mb-2">
+    <div class="containerx">
+        <h6>Công ty tập đoàn HBL</h6>
+        <span>GPKD: Giấy phép kinh doanh số 0109604698</span><br>
+        <span>Sở kế hoạch và đầu tư thành phố Hà Nội cấp giấy phép: 20/04/2021</span><br>
+    </div>
+</div>
+<div class="copyright py-2 text-center" style="color: #fff;">
     <?php echo $copyrightText; ?>.<br/>
     <i>Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.</i>
 </div>

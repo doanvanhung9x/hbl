@@ -24,18 +24,17 @@
     </div>
     <div class="listproduct" style="min-height: 500px; padding: 40px 0px;">
         <div class="containerx d-md-flex d-block justify-content-between">
-            <div class="detailproduct px-2 col-md-7 col-12 h-100 row">
-                <h4>{{ $product->name }}</h4>
+            <div class="detailproduct px-2 col-md-9 col-12 h-100 row">
+                <h4 style="padding-bottom: 15px;">{{ $product->name }}</h4>
                 <img src="{{ optional($product->base_image)->path }}"/>
                 <div class="py-4">
                     {!! $product->description !!}
                 </div>
             </div>
-            <div class="hotnews col-md-4 col-12 mt-2">
-                <a href="{{ route('home') }}"><img src="{{ asset('frontend/images/sptriso-4342.jpg') }}" width="100%"></a>
+            <div class="hotnews col-md-3 col-12 mt-2">
                 @if($posts->count() >0 )
-                <div class="boxnews">
-                    <h3 class="py-2">TIN TỨC CẬP NHẬT</h3>
+                <div class="boxnews" style="border: none;">
+                    <h4 class="py-2">TIN TỨC CẬP NHẬT</h4>
                     <div class="main">
                         <ul>
                             @foreach($posts->filter(fn($p) => !empty($p->slug)) as $post)
@@ -47,12 +46,6 @@
                                 </li>
                             @endforeach
                         </ul>
-                        <div class="videohot mt-5">
-                            <iframe width="100%" height="250px" src="https://www.youtube.com/embed/9vFOYOVQAO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div>
-                                <h5 class="name font-weight-bold;">Giới thiệu về sàn TMĐT Alosuckhoe.vn</h5>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 @endif

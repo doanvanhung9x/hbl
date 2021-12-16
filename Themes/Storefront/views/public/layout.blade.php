@@ -18,7 +18,7 @@
     @stack('meta')
     <link rel="stylesheet" href="{{ asset('frontend/style/swiper-bundle.min.css')}}"/>
     <link rel="stylesheet" href="{{ asset('frontend/style/fancybox.css')}}"/>
-    <link href="{{ asset('frontend/style/bootstrap.min.css')}}" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('frontend/style/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{ asset('frontend/style/fontawesome.css')}}" crossorigin="anonymous"/>
     <link rel="stylesheet" href="{{ asset('frontend/style/style.css')}}" type="text/css">
     <link rel="stylesheet" href="{{ asset('frontend/owlcarousel/assets/owl.carousel.min.css') }}">

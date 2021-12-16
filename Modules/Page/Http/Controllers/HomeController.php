@@ -21,10 +21,19 @@ class HomeController extends Controller
                 $query->where('is_active', 1);
             })->get();
 
-        $products = Product::take(4)->whereHas('categories', function ($query){
-                $query->where('is_active', 1);
+        $productSupplements = Product::take(4)->whereHas('categories', function ($query){
+                $query->whereTranslation('slug', 'thuc-pham-bo-sung');
             })->get();
+
+        $productMedicals = Product::take(4)->whereHas('categories', function ($query){
+            $query->whereTranslation('slug', 'thiet-bi-y-te');
+        })->get();
+
+        $productFoods = Product::take(4)->whereHas('categories', function ($query){
+            $query->whereTranslation('slug', 'thuc-pham-dinh-duong');
+        })->get();
+
         $categories = Category::whereNull('parent_id')->with('files')->take(6)->get();
-        return view('public.home.index', compact('categories', 'posts', 'products'));
+        return view('public.home.index', compact('categories', 'posts', 'productSupplements', 'productMedicals', 'productFoods'));
     }
 }
