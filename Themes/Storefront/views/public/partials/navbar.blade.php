@@ -73,21 +73,21 @@
 {{--                    @include('public.partials.primary_menu')--}}
 {{--                </li>--}}
 {{--                @endif--}}
-                @if ($categoryMenu->menus()->isNotEmpty())
-                    @foreach($categoryMenu->menus() as $menu)
-                    <li><a href="{{ $menu->url() }}">{{ $menu->name() }}</a>
-                        @if (optional($menu->subMenus())->count() > 0)
-                            <div class="dropdown">
-                                <ul >
-                                    @foreach($menu->subMenus() as $category)
-                                        <li><a href="{{$category->url() }}">{{ $category->name() }}</a></li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                    </li>
-                    @endforeach
-                @endif
+{{--                @if ($categoryMenu->menus()->isNotEmpty())--}}
+{{--                    @foreach($categoryMenu->menus() as $menu)--}}
+{{--                    <li><a href="{{ $menu->url() }}">{{ $menu->name() }}</a>--}}
+{{--                        @if (optional($menu->subMenus())->count() > 0)--}}
+{{--                            <div class="dropdown">--}}
+{{--                                <ul >--}}
+{{--                                    @foreach($menu->subMenus() as $category)--}}
+{{--                                        <li><a href="{{$category->url() }}">{{ $category->name() }}</a></li>--}}
+{{--                                    @endforeach--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        @endif--}}
+{{--                    </li>--}}
+{{--                    @endforeach--}}
+{{--                @endif--}}
                 @foreach($categoryProducts as $categoryProduct)
                     <li><a href="{{ $categoryProduct->url() }}">{{ $categoryProduct->name }}</a>
                         @if (optional($categoryProduct->children)->count() > 0)

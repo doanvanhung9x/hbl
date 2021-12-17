@@ -68,11 +68,6 @@
                         </ul>
                     </div>
                 </li>
-                <?php if($primaryMenu->menus()->isNotEmpty()): ?>
-                <li>
-                    <?php echo $__env->make('public.partials.primary_menu', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-                </li>
-                <?php endif; ?>
 
 
 
@@ -93,14 +88,19 @@
 
 
 
-
-
-
-
-
-
-
-
+                <?php $__currentLoopData = $categoryProducts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoryProduct): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <li><a href="<?php echo e($categoryProduct->url()); ?>"><?php echo e($categoryProduct->name); ?></a>
+                        <?php if(optional($categoryProduct->children)->count() > 0): ?>
+                            <div class="dropdown">
+                                <ul >
+                                    <?php $__currentLoopData = $categoryProduct->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $childrenPost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <li><a href="<?php echo e($childrenPost->url()); ?>"><?php echo e($childrenPost->name); ?></a></li>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+                    </li>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 
 
