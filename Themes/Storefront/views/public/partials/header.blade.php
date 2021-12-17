@@ -12,7 +12,7 @@
             </div>
             <div class="search col-6 align-items-center justify-content-center mobile-hide">
                 <div class="home-search">
-                    <form method="get" action="#">
+                    <form method="get" action="{{ route('search') }}">
                         <div class="autocomplete">
                             <input id="search" type="text" name="q" placeholder="Tìm kiếm....">
                             <button type="submit" class="btn background-red btn-search"><i class="fa fa-search"></i> Tìm kiếm</button>

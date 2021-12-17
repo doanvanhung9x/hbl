@@ -36,4 +36,11 @@ class HomeController extends Controller
         $categories = Category::whereNull('parent_id')->with('files')->take(6)->get();
         return view('public.home.index', compact('categories', 'posts', 'productSupplements', 'productMedicals', 'productFoods'));
     }
+
+    public function search()
+    {
+        $posts = Post::whereTranslationLike('title', '%'.request('q').'%')->where('is_active', 1)->get();
+        $products = Product::whereTranslationLike('name', '%'.request('q').'%')->where('is_active', 1)->get();
+        return view('public.search', compact('posts', 'products'));
+    }
 }
