@@ -207,37 +207,36 @@
                 </div>
             </div>
         </li>
-        <li><a href="/san-pham">Sản phẩm</a></li>
-{{--        @foreach($categoryProducts as $categoryProduct)--}}
-{{--            <li><a @if (optional($categoryProduct->children)->count() > 0) data-toggle="collapse" href="#collapseExample15{{ $categoryProduct->id }}" role="button" aria-expanded="false" aria-controls="collapseExample" @else href="{{ $categoryProduct->url() }}" @endif >{{ $categoryProduct->name }} @if (optional($categoryProduct->children)->count() > 0)<i class="fas fa-caret-down"></i> @endif</a>--}}
-{{--                @if (optional($categoryProduct->children)->count() > 0)--}}
-{{--                    <div class="collapse" id="collapseExample15{{ $categoryProduct->id }}">--}}
-{{--                        <div class="card card-body">--}}
-{{--                            <ul class="d-block dropdown-sidebar">--}}
-{{--                            @foreach($categoryProduct->children as $childrenPost)--}}
-{{--                                <li><a href="{{ $childrenPost->url() }}">{{ $childrenPost->name }}</a></li>--}}
-{{--                            @endforeach--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                @endif--}}
-{{--            </li>--}}
-{{--        @endforeach--}}
-{{--        @foreach($categoryPosts as $categoryPost)--}}
-{{--            <li><a @if (optional($categoryPost->children)->count() > 0) data-toggle="collapse" href="#collapseExample16{{ $categoryPost->id }}" role="button" aria-expanded="false" aria-controls="collapseExample" @else href="{{ $categoryPost->url() }}" @endif >{{ $categoryPost->name }} @if (optional($categoryPost->children)->count() > 0)<i class="fas fa-caret-down"></i> @endif</a>--}}
-{{--                @if (optional($categoryPost->children)->count() > 0)--}}
-{{--                    <div class="collapse" id="collapseExample16{{ $categoryPost->id }}">--}}
-{{--                        <div class="card card-body">--}}
-{{--                            <ul class="d-block dropdown-sidebar">--}}
-{{--                            @foreach($categoryPost->children as $childrenPost)--}}
-{{--                                <li><a href="{{ $childrenPost->url() }}">{{ $childrenPost->name }}</a></li>--}}
-{{--                            @endforeach--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                @endif--}}
-{{--            </li>--}}
-{{--        @endforeach--}}
+        @foreach($categoryProducts as $categoryProduct)
+            <li><a @if (optional($categoryProduct->children)->count() > 0) data-toggle="collapse" href="#collapseExample15{{ $categoryProduct->id }}" role="button" aria-expanded="false" aria-controls="collapseExample" @else href="{{ $categoryProduct->url() }}" @endif >{{ $categoryProduct->name }} @if (optional($categoryProduct->children)->count() > 0)<i class="fas fa-caret-down"></i> @endif</a>
+                @if (optional($categoryProduct->children)->count() > 0)
+                    <div class="collapse" id="collapseExample15{{ $categoryProduct->id }}">
+                        <div class="card card-body">
+                            <ul class="d-block dropdown-sidebar">
+                            @foreach($categoryProduct->children as $childrenPost)
+                                <li><a href="{{ $childrenPost->url() }}">{{ $childrenPost->name }}</a></li>
+                            @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endif
+            </li>
+        @endforeach
+        @foreach($categoryPosts as $categoryPost)
+            <li><a @if (optional($categoryPost->children)->count() > 0) data-toggle="collapse" href="#collapseExample16{{ $categoryPost->id }}" role="button" aria-expanded="false" aria-controls="collapseExample" @else href="{{ $categoryPost->url() }}" @endif >{{ $categoryPost->name }} @if (optional($categoryPost->children)->count() > 0)<i class="fas fa-caret-down"></i> @endif</a>
+                @if (optional($categoryPost->children)->count() > 0)
+                    <div class="collapse" id="collapseExample16{{ $categoryPost->id }}">
+                        <div class="card card-body">
+                            <ul class="d-block dropdown-sidebar">
+                            @foreach($categoryPost->children as $childrenPost)
+                                <li><a href="{{ $childrenPost->url() }}">{{ $childrenPost->name }}</a></li>
+                            @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endif
+            </li>
+        @endforeach
         <li><a href="{{ route('contacts.create') }}">{{ trans('storefront::custom.home.contact') }}</a></li>
     </ul>
 </div>
