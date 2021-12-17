@@ -59,7 +59,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="/san-pham">Sản phẩm</a></li>
+{{--                <li><a href="/san-pham">Sản phẩm</a></li>--}}
                 <li><a href="/he-thong-phan-phoi">HỆ THỐNG PHÂN PHỐI</a>
                     <div class="dropdown">
                         <ul>

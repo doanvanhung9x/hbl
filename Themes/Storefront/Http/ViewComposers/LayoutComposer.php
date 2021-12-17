@@ -55,7 +55,7 @@ class LayoutComposer
 
     private function getCategoryProducts()
     {
-        return Category::where('parent_id', 0)->with('children')->get();
+        return Category::where('parent_id', null)->with('children')->get();
     }
 
     private function getTheme()
