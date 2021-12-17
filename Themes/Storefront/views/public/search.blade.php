@@ -6,6 +6,24 @@
     @endif
 @endsection
 @push('css')
+    <style>
+        .product .card{
+            height: 325px;
+        }
+
+        .product .card img{
+            height: 205px;
+        }
+
+        .text-overflow-2-lines {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+    </style>
 @endpush
 @section('content')
     <div class="bread">
@@ -33,7 +51,7 @@
                                 <a href="{{ route('products.show', $product->slug) }}">
                                     <img class="card-img-top" src="{{ optional($product->base_image)->path }}" alt="{{ $product->name }}">
                                     <div class="card-body">
-                                        <h5>{{ $product->name }}</h5>
+                                        <h5 class="text-overflow-2-lines">{{ $product->name }}</h5>
                                     </div>
                                 </a>
                             </div>
@@ -51,7 +69,7 @@
                                 <a href="{{ route('posts.show', $post->slug) }}">
                                     <img class="card-img-top" src="{{ optional($post->base_image)->path }}" alt="{{ $post->title }}">
                                     <div class="card-body">
-                                        <h5>{{ $post->title }}</h5>
+                                        <h5 class="text-overflow-2-lines">{{ $post->title }}</h5>
                                     </div>
                                 </a>
                             </div>
