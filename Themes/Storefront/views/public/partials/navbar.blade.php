@@ -68,11 +68,11 @@
                         </ul>
                     </div>
                 </li>
-                @if($primaryMenu->menus()->isNotEmpty())
-                <li>
-                    @include('public.partials.primary_menu')
-                </li>
-                @endif
+{{--                @if($primaryMenu->menus()->isNotEmpty())--}}
+{{--                <li>--}}
+{{--                    @include('public.partials.primary_menu')--}}
+{{--                </li>--}}
+{{--                @endif--}}
                 @if ($categoryMenu->menus()->isNotEmpty())
                     @foreach($categoryMenu->menus() as $menu)
                     <li><a href="{{ $menu->url() }}">{{ $menu->name() }}</a>
