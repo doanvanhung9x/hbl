@@ -50,7 +50,7 @@ class LayoutComposer
 
     private function getCategoryPosts()
     {
-        return CategoryPost::where('parent_id', null)->with('children')->get();
+        return CategoryPost::where('parent_id', 0)->with('children')->get();
     }
 
     private function getCategoryProducts()
