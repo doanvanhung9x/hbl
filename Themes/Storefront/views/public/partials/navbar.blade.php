@@ -101,19 +101,19 @@
                         @endif
                     </li>
                 @endforeach
-{{--                @foreach($categoryPosts as $categoryPost)--}}
-{{--                    <li><a href="{{ $categoryPost->url() }}">{{ $categoryPost->name }}</a>--}}
-{{--                        @if (optional($categoryPost->children)->count() > 0)--}}
-{{--                            <div class="dropdown">--}}
-{{--                                <ul >--}}
-{{--                                    @foreach($categoryPost->children as $childrenPost)--}}
-{{--                                        <li><a href="{{ $childrenPost->url() }}">{{ $childrenPost->name }}</a></li>--}}
-{{--                                    @endforeach--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                        @endif--}}
-{{--                    </li>--}}
-{{--                @endforeach--}}
+                @foreach($categoryPosts as $categoryPost)
+                    <li><a href="{{ $categoryPost->url() }}">{{ $categoryPost->name }}</a>
+                        @if (optional($categoryPost->children)->count() > 0)
+                            <div class="dropdown">
+                                <ul >
+                                    @foreach($categoryPost->children as $childrenPost)
+                                        <li><a href="{{ $childrenPost->url() }}">{{ $childrenPost->name }}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                    </li>
+                @endforeach
                 <li><a href="{{ route('contacts.create') }}">{{ trans('storefront::custom.home.contact') }}</a></li>
             </ul>
         </div>
