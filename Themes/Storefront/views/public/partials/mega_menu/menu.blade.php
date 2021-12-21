@@ -5,7 +5,7 @@
                 <ul >
                     @foreach($menu->subMenus() as $childrenMenu)
                         <li><a href="{{ $childrenMenu->url() }}">{{ $childrenMenu->name() }}</a>
-                            @if ($childrenMenu->hasSubMenus())
+                            @if (count($childrenMenu))
                                 <div class="dropdown">
                                     <ul class="submenu">
                                         @foreach($childrenMenu->subMenus() as $childrenChildMenu)
