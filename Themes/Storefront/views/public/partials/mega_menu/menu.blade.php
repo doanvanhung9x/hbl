@@ -4,7 +4,17 @@
             <div class="dropdown">
                 <ul >
                     @foreach($menu->subMenus() as $childrenMenu)
-                        <li><a href="{{ $childrenMenu->url() }}">{{ $childrenMenu->name() }}</a></li>
+                        <li><a href="{{ $childrenMenu->url() }}">{{ $childrenMenu->name() }}</a>
+                            @if ($childrenMenu->hasSubMenus())
+                                <div class="dropdown">
+                                    <ul class="submenu">
+                                        @foreach($childrenMenu->subMenus() as $childrenChildMenu)
+                                            <li><a href="{{ $childrenChildMenu->url() }}">{{ $childrenChildMenu->name() }}</a></li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                        </li>
                     @endforeach
                 </ul>
             </div>
