@@ -29,6 +29,7 @@
                         @foreach($menu->subMenus() as $childrenMenu)
                             <li><a @if ($childrenMenu->hasItems()) data-toggle="collapse" href="#collapseExample1588{{ $childrenMenu->id() }}" role="button" aria-expanded="false" aria-controls="collapseExample" @else href="{{ $childrenMenu->url() }}" @endif>
                                     {{ $childrenMenu->name() }}
+                                    @if ($childrenMenu->hasItems())<i class="fas fa-caret-down"></i> @endif
                                 </a>
                                 @if ($childrenMenu->hasItems())
                                 <div class="collapse" id="collapseExample1588{{ $childrenMenu->id() }}">
