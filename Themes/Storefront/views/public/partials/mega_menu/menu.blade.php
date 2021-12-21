@@ -5,10 +5,10 @@
                 <ul >
                     @foreach($menu->subMenus() as $childrenMenu)
                         <li><a href="{{ $childrenMenu->url() }}">{{ $childrenMenu->name() }}</a>
-                            @if (count($childrenMenu))
+                            @if ($childrenMenu->hasItems())
                                 <div class="dropdown">
                                     <ul class="submenu">
-                                        @foreach($childrenMenu->subMenus() as $childrenChildMenu)
+                                        @foreach($childrenMenu->items() as $childrenChildMenu)
                                             <li><a href="{{ $childrenChildMenu->url() }}">{{ $childrenChildMenu->name() }}</a></li>
                                         @endforeach
                                     </ul>
