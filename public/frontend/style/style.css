@@ -140,15 +140,24 @@ body{
 .sidebar .menu-sidebar li
 {
  list-style: none;
- line-height: 45px;
- padding-left: 25px;
+ line-height: 30px;
+ padding-left: 15px;
 }
 .sidebar .menu-sidebar li a
 {
  	text-decoration: none;
-	 color: #1f568b;
-	 font-weight: bold;
+	color: #1f568b;
+	font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
 }
+
+.menu-sidebar .card{
+    padding: 0px;
+    margin: 0px !important;
+    width: 100%;
+}
+
 .dropdown-sidebar
 {
 	margin: 0;
@@ -231,11 +240,12 @@ body{
 	color: #00a40f;
 	font-weight: bold;
 	text-align: center;
+    margin-bottom: 30px;
 }
 .product .item a
 {
 	text-decoration: none;
-	color: #00a40f;
+	color: #151515;
 	font-weight: bold;
 }
 .product .item b
@@ -586,6 +596,8 @@ footer .fbox ul
 	.boxnews img {
 		float: left;
 		padding-right: 20px;
+        height: 50px;
+        width: 100px;
 	}
 }
 @media screen and (max-width:568px)
@@ -684,7 +696,6 @@ footer ul.ft-social li i {
     border: none;
     font-size: 13px;
     text-transform: uppercase;
-    font-weight: 400;
 }
 
 .home-search {

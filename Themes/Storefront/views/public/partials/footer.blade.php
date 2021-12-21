@@ -1,6 +1,6 @@
 <footer class="py-4 px-2">
     <div class="containerx d-sm-flex d-block">
-        <div class="col-sm-3 col-12 info px-2">
+        <div class="col-sm-4 col-12 info px-2">
             <h6><b>{{ setting('store_name') }}</b></h6>
             <span><b>Hotline:</b> {{ setting('store_phone') }} </span><br>
             <span><b>Email:</b> {{ setting('store_email') }}</span><br>
@@ -24,7 +24,7 @@
                 <li><a href="{{ route('home') }}/gioi-thieu">{{ trans('storefront::custom.home.introduce') }}</a></li>
             </ul>
         </div>
-        <div class=" col-12 col-sm-3 connect px-2">
+        <div class=" col-12 col-sm-2 connect px-2">
             <ul class="ft-social">
                 <li>
                     <a target="_blank" class="text-orange" href="https://www.youtube.com/channel/UCsNCWsOdIP7-FSu0TjIHUAw">

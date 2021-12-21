@@ -24,6 +24,12 @@ class Menu
         return $this->menu->url();
     }
 
+    public function id()
+    {
+        return $this->menu->id;
+    }
+
+
     public function target()
     {
         return $this->menu->target;

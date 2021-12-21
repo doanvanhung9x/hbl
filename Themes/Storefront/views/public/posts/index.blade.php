@@ -35,7 +35,7 @@
     </div>
     <div class="listproduct" style="min-height: 500px; padding: 40px 0px;">
         <div class="containerx d-md-flex d-block justify-content-between">
-            <div class="hotnews px-2 col-md-9 col-12 h-100 row">
+            <div class="hotnews px-2 col-md-9 col-12 h-100">
                 <h4 >TIN NỔI BẬT</h4>
                 <!--boxnews-->
                 @if($posts->count() > 0)

@@ -1,7 +1,7 @@
 <header>
     <div class="containerx">
         <div class="row justify-content-between align-items-center">
-            <div class="logo col-3 col-md-3" >
+            <div class="logo col-2 col-md-3" >
                 <a href="<?php echo e(route('home')); ?>">
                     <?php if(is_null($headerLogo)): ?>
                         <h2><?php echo e(setting('store_name')); ?></h2>
@@ -20,7 +20,7 @@
                     </form>
                 </div>
             </div>
-            <div class="contact d-flex col-3 align-items-center justify-content-center col-md-3">
+            <div class="contact d-flex col-4 align-items-center justify-content-center col-md-3">
                 <div class="icon-phone">
                     <i class="fas fa-phone-alt"></i>
                 </div>
