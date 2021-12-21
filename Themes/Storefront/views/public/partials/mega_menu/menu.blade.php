@@ -27,7 +27,7 @@
                 <div class="card card-body">
                     <ul class="d-block dropdown-sidebar">
                         @foreach($menu->subMenus() as $childrenMenu)
-                            <li><a @if ($childrenMenu->hasSubMenus()) data-toggle="collapse" href="#collapseExample1588{{ $childrenMenu->id() }}" role="button" aria-expanded="false" aria-controls="collapseExample" @else href="{{ $childrenMenu->url() }}" @endif>
+                            <li><a @if ($childrenMenu->hasItems()) data-toggle="collapse" href="#collapseExample1588{{ $childrenMenu->id() }}" role="button" aria-expanded="false" aria-controls="collapseExample" @else href="{{ $childrenMenu->url() }}" @endif>
                                     {{ $childrenMenu->name() }}
                                 </a>
                                 @if ($childrenMenu->hasItems())
