@@ -19,6 +19,11 @@ class SubMenu
         return $this->subMenu->url();
     }
 
+    public function id()
+    {
+        return $this->subMenu->id;
+    }
+
     public function target()
     {
         if ($this->subMenu instanceof Category) {
