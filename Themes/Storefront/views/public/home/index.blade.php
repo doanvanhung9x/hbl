@@ -157,7 +157,7 @@
     @if($productSupplements->count() >0 )
     <div class="product py-5" style="background: #f1f1f1;">
         <div class="containerx">
-            <h3>Thực phẩm bổ sung</h3>
+            <h3 style="text-transform: uppercase;">Thực phẩm bổ sung</h3>
             <div class="owl-carousel owl-theme">
                 @foreach($productSupplements->filter(fn($p) => !empty($p->slug)) as $productSupplement)
                     <div class="item text-center" style="background: #fff; min-height: 385px; padding: 10px;">
@@ -176,7 +176,7 @@
     @if($productMedicals->count() >0 )
         <div class="product py-5" style="background: #ebebeb;">
             <div class="containerx">
-                <h3>Thực phẩm dinh dưỡng</h3>
+                <h3 style="text-transform: uppercase;">Thiết bị y tế</h3>
                 <div class="owl-carousel owl-theme">
                     @foreach($productMedicals->filter(fn($p) => !empty($p->slug)) as $productMedical)
                         <div class="item text-center" style="background: #fff; min-height: 385px; padding: 10px;">
@@ -196,7 +196,7 @@
     @if($productFoods->count() >0 )
         <div class="product py-5" style="background: #f1f1f1;">
             <div class="containerx">
-                <h3>Thiết bị y tế</h3>
+                <h3 style="text-transform: uppercase;">Thực phẩm dinh dưỡng</h3>
                 <div class="owl-carousel owl-theme">
                     @foreach($productFoods->filter(fn($p) => !empty($p->slug)) as $productFood)
                         <div class="item text-center" style="background: #fff; min-height: 385px; padding: 10px;">
