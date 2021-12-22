@@ -40,7 +40,7 @@
                 <!--boxnews-->
                 @if($posts->count() > 0)
                     @foreach($posts->filter(fn($p) => !empty($p->slug)) as $post)
-                    <div class="boxnews py-4">
+                    <div class="boxnews py-4 clearfix">
                         <img src="{{ optional($post->base_image)->path }}" width="250px">
                         <div>
                             <h6><a href="{{ route('posts.show', $post->slug) }}">{{ $post->title }}</a></h6>

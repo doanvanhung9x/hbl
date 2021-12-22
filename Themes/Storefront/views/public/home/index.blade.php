@@ -155,12 +155,12 @@
 
     <!--product-->
     @if($productSupplements->count() >0 )
-    <div class="product py-5">
+    <div class="product py-5" style="background: #f1f1f1;">
         <div class="containerx">
             <h3>Thực phẩm bổ sung</h3>
             <div class="owl-carousel owl-theme">
                 @foreach($productSupplements->filter(fn($p) => !empty($p->slug)) as $productSupplement)
-                    <div class="item text-center">
+                    <div class="item text-center" style="background: #fff;">
                         <img src="{{ optional($productSupplement->base_image)->path }}">
                         <a href="{{ route('products.show', $productSupplement->slug) }}">{{ $productSupplement->name }}</a>
                         <div>{!! $productSupplement->short_description !!}</div>
@@ -174,12 +174,12 @@
     <!--end_product-->
 
     @if($productMedicals->count() >0 )
-        <div class="product py-5">
+        <div class="product py-5" style="background: #ebebeb;">
             <div class="containerx">
-                <h3>Thực phẩm bổ sung</h3>
+                <h3>Thực phẩm dinh dưỡng</h3>
                 <div class="owl-carousel owl-theme">
                     @foreach($productMedicals->filter(fn($p) => !empty($p->slug)) as $productMedical)
-                        <div class="item text-center">
+                        <div class="item text-center" style="background: #fff;">
                             <a href="{{ route('products.show', $productMedical->slug) }}">
                                 <img src="{{ optional($productMedical->base_image)->path }}">
                             </a>
@@ -194,12 +194,12 @@
     @endif
 
     @if($productFoods->count() >0 )
-        <div class="product py-5">
+        <div class="product py-5" style="background: #f1f1f1;">
             <div class="containerx">
-                <h3>Thực phẩm bổ sung</h3>
+                <h3>Thiết bị y tế</h3>
                 <div class="owl-carousel owl-theme">
                     @foreach($productFoods->filter(fn($p) => !empty($p->slug)) as $productFood)
-                        <div class="item text-center">
+                        <div class="item text-center" style="background: #fff;">
                             <a href="{{ route('products.show', $productFood->slug) }}">
                                 <img src="{{ optional($productFood->base_image)->path }}">
                             </a>

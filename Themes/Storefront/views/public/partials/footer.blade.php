@@ -43,7 +43,6 @@
 <hr>
 <div class="py-2 text-left mb-2">
     <div class="containerx">
-        <h6>Công ty tập đoàn HBL</h6>
         <span>GPKD: Giấy phép kinh doanh số 0109604698</span><br>
         <span>Sở kế hoạch và đầu tư thành phố Hà Nội cấp giấy phép: 20/04/2021</span><br>
     </div>
