@@ -31,23 +31,23 @@
                     <div class="swiper mySwiper1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div style="padding: 0px 50px;"> <h5>HBL GROUP</h5>
+                                <div style="padding: 0px 50px;"> <h5>LỊCH SỬ HÌNH THÀNH VÀ PHÁT TRIỂN</h5>
                                     <p>CÔNG TY CỔ PHẦN TẬP ĐOÀN Y TẾ HBL ( Gọi tắt là HBL GROUP) chính thức đi vào hoạt động từ T4.2021, theo giấy phép kinh doanh số 0109604698 - sở kế hoạch đầu tư hà nội. HBL Group  là một trong những đơn vị có uy tín, đã và đang ngày càng khẳng định  được vị thế của mình trong lĩnh vực y tế, chăm sóc sức khỏe cộng đồng.</p>
-                                    <div class="d-flex justify-content-center"><a href="javascript:void(0)" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+                                    <div class="d-flex justify-content-center"><a href="/lich-su-hinh-thanh-va-phat-trien" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div style="padding: 0px 50px;">
-                                    <h5>HBL GROUP</h5>
-                                    <p>HBL Group là công ty tiên phong phát triển theo định hướng chuyển đổi số lĩnh vực y tế, , chăm sóc sức khỏe cộng đồng.  Tuy mới thành lập năm 2021 đã trở thành thương hiệu quen thuộc, và là đối tác tin cậy của nhiều bạn hàng khắp các tỉnh thành trong cả nước.
-                                    </p>
-                                    <div class="d-flex justify-content-center"><a href="javascript:void(0)" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+                                    <h5>Công Ty Cổ Phần Nutrihealth</h5>
+                                    <p>Trong quá trình phát triển của mình, NutriHealth luôn tôn trọng “quốc tế” hóa và “đổi mới”. Tập trung vào các nguyên tắc cơ bản của “chất lượng” và “trách nhiệm"</p>
+                                    <div class="d-flex justify-content-center"><a href="/cong-ty-co-phan-nutrihealth" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div style="padding: 0px 50px;"> <h5>HBL GROUP</h5>
-                                    <p>Tiền thân của  HBL Group gồm các đơn vị: Công ty cổ phẩn Dược & y tế cộng đồng, Công ty cổ phần đầu tư sức khỏe cộng đồng, Công ty cổ phần công nghệ sức khỏe Sao Đại Việt. Chủ tịch HDQT là doanh nhân trẻ luôn tâm huyết với lĩnh vực sức khỏe cộng đồng : Ông Trần Mạnh Đức. </p>
-                                    <div class="d-flex justify-content-center"><a href="javascript:void(0)" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
+                                <div style="padding: 0px 50px;">
+                                    <h5>Công Ty Cổ Phần Công Nghệ Sức Khỏe Sao Đại Việt</h5>
+                                    <p>Sao Đại Việt là công ty đa lĩnh vực: Chuỗi phòng khám đông y, kênh phân phối thuốc và thực phẩm chức năng và đơn vị tổ chức hoạt động cộng đồng. Triết lý kinh doanh của chúng tôi là: Sinh ra vì cộng đồng, phụng sự cho cộng đồng, thành công nhờ cộng đồng và báo đáp lại cộng đồng!</p>
+                                    <div class="d-flex justify-content-center"><a href="/cong-ty-co-phan-cong-nghe-suc-khoe-sao-dai-viet" style="color: #F15A24;text-decoration: none;font-weight: bold;"> <i>Xem thêm</i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -160,9 +160,9 @@
             <h3>Thực phẩm bổ sung</h3>
             <div class="owl-carousel owl-theme">
                 @foreach($productSupplements->filter(fn($p) => !empty($p->slug)) as $productSupplement)
-                    <div class="item text-center" style="background: #fff;">
+                    <div class="item text-center" style="background: #fff; min-height: 385px; padding: 10px;">
                         <img src="{{ optional($productSupplement->base_image)->path }}">
-                        <a href="{{ route('products.show', $productSupplement->slug) }}">{{ $productSupplement->name }}</a>
+                        <a href="{{ route('products.show', $productSupplement->slug) }}" class="text-overflow-2-lines">{{ $productSupplement->name }}</a>
                         <div>{!! $productSupplement->short_description !!}</div>
                         <div><b>{{ product_price($productSupplement) }}</b></div>
                     </div>
@@ -179,11 +179,11 @@
                 <h3>Thực phẩm dinh dưỡng</h3>
                 <div class="owl-carousel owl-theme">
                     @foreach($productMedicals->filter(fn($p) => !empty($p->slug)) as $productMedical)
-                        <div class="item text-center" style="background: #fff;">
+                        <div class="item text-center" style="background: #fff; min-height: 385px; padding: 10px;">
                             <a href="{{ route('products.show', $productMedical->slug) }}">
                                 <img src="{{ optional($productMedical->base_image)->path }}">
                             </a>
-                            <a href="{{ route('products.show', $productMedical->slug) }}">{{ $productMedical->name }}</a>
+                            <a href="{{ route('products.show', $productMedical->slug) }}" class="text-overflow-2-lines">{{ $productMedical->name }}</a>
                             <div>{!! $productMedical->short_description !!}</div>
                             <div><b>{{ product_price($productMedical) }}</b></div>
                         </div>
@@ -199,11 +199,11 @@
                 <h3>Thiết bị y tế</h3>
                 <div class="owl-carousel owl-theme">
                     @foreach($productFoods->filter(fn($p) => !empty($p->slug)) as $productFood)
-                        <div class="item text-center" style="background: #fff;">
+                        <div class="item text-center" style="background: #fff; min-height: 385px; padding: 10px;">
                             <a href="{{ route('products.show', $productFood->slug) }}">
                                 <img src="{{ optional($productFood->base_image)->path }}">
                             </a>
-                            <a href="{{ route('products.show', $productFood->slug) }}">{{ $productFood->name }}</a>
+                            <a href="{{ route('products.show', $productFood->slug) }}" class="text-overflow-2-lines">{{ $productFood->name }}</a>
                             <div>{!! $productFood->short_description !!}</div>
                             <div><b>{{ product_price($productFood) }}</b></div>
                         </div>
@@ -234,7 +234,7 @@
                     @foreach($posts->filter(fn($p) => !empty($p->slug)) as $post)
                         <div class="newsitem">
                             <img src ="{{ optional($post->base_image)->path }}">
-                            <a href="{{ route('posts.show', $post->slug) }}">{{ $post->title }}</a>
+                            <a href="{{ route('posts.show', $post->slug) }}" class="text-overflow-2-lines">{{ $post->title }}</a>
                             <p>{{ $post->short_description }}</p>
                         </div>
                     @endforeach
@@ -281,10 +281,10 @@
         keyboard: {
             enabled: true,
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
         // navigation: {
         //     nextEl: ".swiper-button-next",
         //     prevEl: ".swiper-button-prev",
