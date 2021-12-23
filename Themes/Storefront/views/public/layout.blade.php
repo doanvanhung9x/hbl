@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="{{ asset('frontend/owlcarousel/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/owlcarousel/assets/owl.theme.default.min.css') }}">
     <script type="text/javascript" src="{{ asset('frontend/js/jquery-3.6.0.min.js') }}"></script>
+    <meta property="og:image"
+          content="{{ asset('frontend/images/description.png') }}">
     <link rel="shortcut icon" href="{{ $favicon }}" />
     @stack('css')
 </head>
