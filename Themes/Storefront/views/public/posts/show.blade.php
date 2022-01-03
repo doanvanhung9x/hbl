@@ -5,8 +5,9 @@
 @endsection
 @push('css')
     <style>
-        .hotnews img{
+        .post-detail img{
             width: 100%;
+            height: auto;
         }
     </style>
 @endpush
@@ -24,8 +25,9 @@
     <div class="listproduct" style="min-height: 500px; padding: 40px 0px;">
         <div class="containerx d-md-flex d-block justify-content-between">
             <div class="hotnews px-2 col-md-9 col-12 h-100 row">
-               {!! $post->body !!}
-
+                <div class="post-detail">
+                    {!! $post->body !!}
+                </div>
                 <div class="news-social">
                     Chia sẻ với:
                     <a href="https://www.facebook.com/sharer/sharer.php?u={{ route('posts.show', $post->slug) }}"><i class="fab fa-facebook-square"></i></a>
