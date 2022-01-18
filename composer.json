@@ -19,6 +19,7 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "nwidart/laravel-modules": "^3.0",
+        "spatie/laravel-sitemap": "5.2.11",
         "spatie/laravel-sluggable": "2.1.8",
         "swayok/alternative-laravel-cache": "^5.4",
         "symfony/intl": "^4.1",
